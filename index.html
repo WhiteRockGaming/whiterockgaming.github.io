@@ -1,35 +1,370 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US" class="no-js">
 	<head>
+
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
 		<title>White Rock Gaming</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+
+		<!-- ==============================================
+		CSS
+		=============================================== -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/meflat-blue.css">
+
+
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+		<!-- ==============================================
+		JS
+		=============================================== -->
+
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+
+		<style>
+		.slide-text {
+			display: block;
+			width: 100%;
+			height: 270px;
+		}
+		</style>
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hello there, world!</h1>
-				<p>This is just a little webpage I cooked up to say hello. 
-					I run some Minecraft servers.
-					Find more info here: <br>
-					<a href="https://www.curseforge.com/minecraft/modpacks/less-tech-more-dragon">curseforge.com/minecraft/modpacks/less-tech-more-dragon</a>
-				</p>
-				<p> 
-					<a href="/about">What's this all about?</a>
-				</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:Ruce@Live.com">email</a></li>
-        		<li><a href="https://github.com/Rutes">github.com/Rutes</a></li>
-			</ul>
+
+	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+
+					<!-- ======= LOGO (for small screens)========-->
+					<a class="navbar-brand visible-xs scrollto" href="#home">WRG</a>
+
+				</div>
+
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="scrollimation fade-in"><a href="https://twitter.com/blueorcwarrior"><i class="fa fa-twitter fa-fw"></i></a>
+                        </li>
+                        <li id="logo">
+							<a href="#home" class="scrollto">
+								<h1>W<span>R</span>G</h1>
+							</a>
+						</li>
+                        <li>
+							<a href="#minecraft" class="scrollto">Minecraft</a>
+                        </li>
+                        <li>
+							<a href="#boredomcures" class="scrollto">Other Cures for Boredom</a>
+						<li>
+							<a href="#contact" class="scrollto">Contact Me</a>
+						</li>
+					</ul>
+				</div><!--End navbar-collapse -->
+
+			</div><!--End container -->
+
+		</div><!--End main-nav -->
+
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home" class="jumbotron">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-6 text-col">
+
+						<h1 class="scrollimation fade-right">White Rock Gaming</h1>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</header><!--End header -->
+
+        
+        <!-- ==============================================
+		minecraft
+		=============================================== -->	
+		<section id="minecraft" class="white-bg padding-top-bottom">
+		
+			<div class="container">
+			
+				<header class="section-header text-center">
+					<h1 class="scrollimation scale-in">Minecraft</h1>
+                    <h2 class="text-center scrollimation fade-in"> <a href="https://discord.gg/97AQ2Jw">Join us on Discord! - discord.gg/97AQ2Jw</a></h2>
+				</header>
+            <div class="row minecraft">
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up">
+                        <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition">
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/mclogo.png" alt="" />
+                            </div>
+                            <h3>I host some Minecraft servers</h3>
+                            </a>
+                            <p>It's all just for fun. I don't charge anything - playing on the servers is free, but you will have to buy Minecraft. On my servers, I use language filters and I kick out trolls and spammers, so it's about as kid-safe as anything else on the Internet can be these days... Feel free to <a href="#contact" class="scrollto">contact me</a> if you have any concerns.
+                            </p>
+					</div>
+                    
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+                        <a href="https://www.curseforge.com/minecraft/modpacks/less-tech-more-dragon">
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/LTMD-logo.png" alt="" />
+                            </div>
+                            <h3>modpack: Less Tech More Dragon</h3>
+                        </a>
+                            <p>How do I download a modpack?</p>
+                            <ol>
+                                <li><a href="https://www.twitch.tv/downloads">Use the Twitch app - twitch.tv/downloads</a>
+                                </li><li>Open Twitch
+                                </li><li>go to "Mods" tab
+                                </li><li>click Minecraft
+                                </li><li>search for "dragon" or "animals"
+                                </li><li>Click on the thing you want
+                                </li><li>click Install
+                                </li><li>wait for Install
+                                </li><li>click Play
+                                </li><li>profit.
+                            </ol>
+					</div> 
+                    
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+                        <a href=https://www.curseforge.com/minecraft/modpacks/iad>
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/IAD.png" alt="" />
+                            </div>
+                                <h3>modpack: Immersive Animals & Discovery</h3>
+                        </a>
+                        <p>The official server of the popular mod <a href="http://www.animaniamod.net/index.php/Main_Page">"Animania!"</a> Also check out the Minecraft market creator <a href="https://www.razzleberri.es/">"Razzleberries"</a> if you prefer to play Minecraft on Xbox or other platforms.
+					</div> 	
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up d4">
+                        <a href="https://docs.google.com/document/d/1Yry9jxvvT-DClKqeAhZzfuVQqTm1FsmGDI4h1YK0_TY/edit?usp=sharing">
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/mcconsole.png" alt="" />
+                            </div>
+                            <h3>TeachCraft - Learn to code with Python!</h3>
+                            </a>
+                            <p>This is a link to a Google Doc that guides you step-by-step on how to set up a coding environment to learn Python by hooking it into Minecraft. We did this one semester for Bold Idea and it was a blast. See more info on <a href="https://teachcraft.net/get_started">TeachCraft.net</a> ...assuming their website isn't down! That's why I made the Google Doc :)
+                            </p>
+					</div>
+				</div><!--End row -->
+			
+			</div>
+		
+		
+		</section>
+		
+
+
+			
+			<!-- ==============================================
+			PROJECT PREVIEW MODAL (Do not alter this markup)
+			=============================================== -->	
+			<div id="project-modal" class="modal fade">
+			
+				<div class="modal-dialog">
+				
+					<div class="modal-content">
+					
+						<div class="modal-header">
+						
+							<div class="container">
+							
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								
+								<h1 id="hdr-title" class="text-center"></h1>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="image-wrapper">
+											<img class="img-responsive" src="assets/chrome.png" alt="">
+											<div class="loader"></div>
+											<div class="screen"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div id="project-sidebar" class="col-md-3">
+										<h2 id="sdbr-title"></h2>
+										<p id="sdbr-category"></p>
+										<p id="sdbr-date"></p>
+										<p id="sdbr-client"></p>
+										<p id="sdbr-link"><a href="#link" target="_blank"></a></p>
+										<p id="sdbr-descr"></p>
+									</div>
+									<div id="project-content" class="col-md-8 col-md-offset-1">
+									</div>
+								</div>
+								
+							</div>
+						</div><!-- End modal-body -->
+						
+					</div><!-- End modal-content -->
+					
+				</div><!-- End modal-dialog -->
+				
+			</div><!-- End modal -->
+			
+		</section>
+        
+        
+        <!-- ==============================================
+		boredomcures
+		=============================================== -->
+		<section id="boredomcures" class="white-bg padding-top-bottom">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+
+					<h1 class="scrollimation scale-in">Other Cures for Boredom</h1>
+				</header>
+
+				<div class="row boredomcures">
+					
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+                        <a href=http://www.dorba.org/trails.php>
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/dorbaLogo.png" alt="" />
+                            </div>
+                            <h3>Mountain Biking</h3>
+                        </a>
+					</div> 
+                    
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+                        <a href=https://summitgyms.com/>
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/bbrock.jpg" alt="" />
+                            </div>
+                                <h3>Rock Climbing</h3>
+                        </a>
+					</div> 	
+                    
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up">
+                        <a href="https://boldidea.org/">
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/Bold+Idea+Logo.png" alt="" />
+                            </div>
+                            <h3>Teach kids coding</h3>
+                        </a>
+					</div>
+                    
+                    <div class="col-md-3 col-sm-6 item scrollimation fade-up d4">
+						<a href="https://battle.net/recruit/F2TLV55K5Q">
+                            <div class="icon">
+                                <img class="img-responsive img-center" src="assets/World_of_Warcraft_logo-700x275.jpg" alt="" />
+                            </div>
+                        <h3>World of Warcraft</h3>
+                        </a>
+					</div>
+
+				</div>
+			</div>
+            
+		</section>
+        
+        
+		<!-- ==============================================
+		CONTACT
+		=============================================== -->
+		<section id="contact" class="dark-bg light-typo padding-top">
+
+			<div class="container">
+
+				<header class="section-header text-center">
+					<h1 class="scrollimation scale-in">Drop Me a Line</h1>
+					<p><a href="mailto:Ruce@Live.com?Subject=Found%20Your%20Website" target="_top">Ruce@Live.com</a><br/> Feel free to send me an email.</p>
+				</header>
+
+			</div>
+
+		</section>
+
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->
+
+		<footer id="main-footer" class="dark-bg light-typo">
+
+			<div class="container">
+
+				<hr>
+
+				<div class="row">
+
+					<div class="col-sm-6">
+						<ul class="social-links">
+                            <li class="scrollimation fade-in"><a href="https://twitter.com/blueorcwarrior"><i class="fa fa-twitter fa-fw">BlueOrcWarrior on Twitter</i></a></li>
+						</ul>
+					</div>
+                    <!--
+					<div class="col-sm-6 text-right">
+						<p>&copy;2014 Me Flat Theme by <a href="http://q-themes.net/">Qthemes</a></p>
+					</div>
+                    -->
+				</div>
+
+			</div>
+
 		</footer>
+
+
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
+
+		<script src="js/libs/bootstrap.min.js"></script>
+		<script src='js/jquery.easing.1.3.min.js'></script>
+		<script src='js/jquery.scrollto.js'></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src='js/jquery.flexslider.min.js'></script>
+		<script src='js/jquery.masonry.js'></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.label_better.min.js"></script>
+		<script src="js/jquery.easypiechart.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/meflat.js"></script>
+
 	</body>
+
 </html>
