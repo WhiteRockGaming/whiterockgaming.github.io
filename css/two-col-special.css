@@ -1,0 +1,22 @@
+.two-col-special {
+    border: 1px dotted blue;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.two-col-special li {
+    display: inline-block;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; /* In case multi-word categories form two lines */
+}
+.two-col-special li:before {
+    content: '+';
+    padding: 5px;
+    margin-right: 5px; /* you can tweak the gap */
+    color: orange;
+    background-color: white; /* in case you want a color... */
+    display: inline-block;
+}
